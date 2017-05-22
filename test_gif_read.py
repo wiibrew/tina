@@ -30,3 +30,8 @@ def get_gif_num_frames(filename):
 path='/media/wei/DATA/GIF_PROJ/data/gif_exp_happy/1SjObB0Y07mg0.gif'
 frames=get_gif_num_frames(path)
 print frames
+
+import gif_reader
+
+gr=gif_reader.gif_reader([path])
+print gr.gif_array.shape
